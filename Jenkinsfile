@@ -12,5 +12,12 @@ pipeline {
                 sh "echo COLOR: ${params.COLOR}"
             }
         }
+
+        stage('Build') {
+            steps {
+                echo "Simulating build process..."
+                sh "sleep 2"
+            }
+        }
     }
 }
